@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s;
+	display: flex;
+	justify-content: center;
+	border: 22px solid #FFB344;
+}
+
+@keyframes change{
+	0%{
+		background-position: 0 50%;
+	}
+
+	50%{
+		background-position: 100% 50%;
+	}
+
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+
+.homePage{
+	width: 400px;
+
+}
+
+.homeForm input{
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	text-align: center;
+	font-size: 30px;
+	outline: none;
+}
+
+.homeForm button{
+	display: inline-block; 
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 175px;
+	align-content: center;
+	font-size: 25px;
+	background-color: #FFDFAF;
+	border: none;
+	outline: none;
+	border-radius: 50px;
+	height: 50px;
+	/*transition: 0.4s ease;*/
+}
+
+.homeForm button:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+	background-color: yellow;
+}
+
+.india{
+	width: 800px;
+	height: 500px;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 60px auto;
+	border-radius: 10px;
+	box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.4);
+	z-index: 1;
+	color: black;
+}
+
+.indiaHeader{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: thistle;
+	box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.indiaBody{
+	background-color: rgb(226, 238, 238);
+	padding: 30px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.user{
+	display: flex;
+	align-items: center;
+	padding-left: 3rem;
+}
+
+.timer{
+	display: flex;
+	align-items: center;
+	background-color: #341f97;
+	border-top-right-radius: 10px;
+	color: white;
+	padding: 0 30px;
+
+}
+
+.options{
+	list-style: none;
+	margin: 30px 0px;
+
+}
+
+.option{
+	background-color: #fff;
+	width: 300px;
+	padding: 15px 20px;
+	margin-bottom: 15px;
+	border-radius: 50px;
+	border: 2px solid transparent;
+}
+
+.option:hover{
+	cursor: pointer;
+	border: 2px solid #341f97;
+}
+
+.next{
+	background-color: #341f97;
+	color: white;
+	padding: 15px 35px;
+	border: none;
+	border-radius: 50px;
+	transition: 0.3s ease;
+}
+
+.next:hover{
+	cursor: pointer;
+	background-color: wheat;
+	color: skyblue;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+	background-color: #341f97;
+	color: #fff;
+}
+
+.username,
+.userpoints,
+.usertime {
+	text-align: center;
+	color: white;
+	margin: 10px;
+}
